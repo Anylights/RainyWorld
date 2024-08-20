@@ -4324,7 +4324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   centerPoint: {fileID: 1932871730}
   radius: 60
-  speed: 2
+  speed: 1
 --- !u!1 &1636649424
 GameObject:
   m_ObjectHideFlags: 0
@@ -6320,7 +6320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2daf5b4b98ced45418eaf816271182d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityConstant: 5
+  gravityConstant: 20
   maxGravityDistance: 10
 --- !u!50 &2133207809
 Rigidbody2D:
@@ -6862,7 +6862,7 @@ Transform:
   m_GameObject: {fileID: 7852709295307603389}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.002, y: -0.022, z: 0}
   m_LocalScale: {x: 0.58, y: 0.58, z: 0.58}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8603,6 +8603,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9027007337642960739, guid: 2d00654d9a630bb43b24121eda6b1005, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027007337642960739, guid: 2d00654d9a630bb43b24121eda6b1005, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027007337642960739, guid: 2d00654d9a630bb43b24121eda6b1005, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027007337642960739, guid: 2d00654d9a630bb43b24121eda6b1005, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.4
       objectReference: {fileID: 0}
@@ -8641,6 +8653,10 @@ PrefabInstance:
     - target: {fileID: 9027007337642960739, guid: 2d00654d9a630bb43b24121eda6b1005, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9027007337642960739, guid: 2d00654d9a630bb43b24121eda6b1005, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10844,11 +10860,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1046245671374163836, guid: 8e6fe672d61f90b4db2d5ffd763621fd, type: 3}
       propertyPath: maxObjects
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1046245671374163836, guid: 8e6fe672d61f90b4db2d5ffd763621fd, type: 3}
       propertyPath: minObjects
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046245671374163836, guid: 8e6fe672d61f90b4db2d5ffd763621fd, type: 3}
+      propertyPath: generationInterval
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1046245671374163836, guid: 8e6fe672d61f90b4db2d5ffd763621fd, type: 3}
       propertyPath: minDistanceFromPlayer
@@ -15721,7 +15741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2daf5b4b98ced45418eaf816271182d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravityConstant: 5
+  gravityConstant: 20
   maxGravityDistance: 10
 --- !u!212 &7925162616476515961
 SpriteRenderer:
@@ -15904,7 +15924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   centerPoint: {fileID: 1932871730}
   radius: 45
-  speed: -5
+  speed: -2
 --- !u!4 &8170317667735616156
 Transform:
   m_ObjectHideFlags: 0
